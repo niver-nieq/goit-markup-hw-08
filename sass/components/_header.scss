@@ -1,0 +1,135 @@
+header {
+  background: $background-window;
+  border-bottom: $border-bottom;
+
+  .cabezera {
+    height: 80px;
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+    padding-left: 15px;
+
+    &__link-web {
+      text-decoration: none;
+      margin: auto;
+
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.15em;
+      text-align: right;
+      letter-spacing: 0.03em;
+      color: $color-logo;
+    }
+
+    .card__index::after {
+      content: '';
+      position: absolute;
+      width: 54px;
+      height: 4px;
+      top: 48px;
+      left: 38px;
+      border-radius: 2px;
+      background-color: $primary-color;
+    }
+
+    .card__portafolio::after {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 4px;
+      top: 48px;
+      left: 137px;
+      border-radius: 2px;
+      background-color: $primary-color;
+    }
+  }
+
+  .link-nav {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    position: relative;
+
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color: $color-title;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.7142em;
+      letter-spacing: 0.02em;
+      margin: auto;
+      margin-right: 50px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $primary-color;
+      }
+    }
+
+    &__current a {
+      color: $primary-color;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+
+    a.contact__email {
+      color: $primary-color;
+      margin-right: 50px;
+    }
+
+    a.contact__email1 {
+      margin-right: 50px;
+    }
+
+    &__icons-header {
+      margin-right: 10px;
+      padding: 0px;
+    }
+
+    &__icons-header1 {
+      margin-right: 10px;
+      padding: 0px;
+    }
+    &__icons-header2 {
+      margin-right: 10px;
+      padding: 0px;
+    }
+
+    &__icons-header {
+      fill: $primary-color;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.7142em;
+      letter-spacing: 0.02em;
+      color: $color-text;
+      // margin-right: 50px;
+      padding: 0px;
+
+      &:hover,
+      &:focus {
+        fill: $primary-color;
+        color: $primary-color;
+      }
+    }
+  }
+}

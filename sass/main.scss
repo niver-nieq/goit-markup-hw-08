@@ -1,0 +1,22 @@
+@import 'utils/variables';
+@import 'components/container-section';
+@import 'components/main-client';
+@import 'components/header';
+@import 'components/container-footer';
+@import 'components/form-footer';
+@import 'components/icons-footer';
+@import 'components/main-container';
+@import 'components/main-window';
+@import 'components/main-window-form';
+@import 'components/main-details';
+@import 'components/main-image-container';
+@import 'components/main-equipment';
+@import 'components/portfolio-button';
+@import 'components/portfolio-image';
+
+:root {
+  --var-color-text: #757575;
+  --var-color-fondo-hover-focus: #2196f3;
+  --var-colo-text-hover-focus: #ffffff;
+  --var-color-fondo1: #f5f4fa;
+}

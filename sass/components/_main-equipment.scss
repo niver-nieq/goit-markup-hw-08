@@ -1,0 +1,113 @@
+.team-color {
+  background: $background-equipment;
+  margin-bottom: 94px;
+}
+
+.equipment-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &__title {
+    margin: auto;
+    padding-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-title;
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+}
+
+.team-list {
+  display: flex;
+  margin: auto;
+  padding: 0px;
+
+  &__image-container {
+    background: $background-main;
+    margin-right: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__image-container1 {
+    background: $background-main;
+    margin: 0 auto;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__image:hover {
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.428em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-title;
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+
+  &__text {
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.71em;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: $color-text;
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+}
+
+.network-container {
+  display: flex;
+  justify-content: center;
+  height: 44px;
+  margin-top: 16px;
+  padding: 0px;
+  margin: 0 auto;
+  margin-top: 16px;
+
+  &__networks {
+    border-radius: 50%;
+    height: 44px;
+    margin-right: 10px;
+    padding: 12px;
+    fill: $primary-fill-color;
+    margin-bottom: 0px;
+
+    &:hover,
+    &:focus {
+      background: $primary-color;
+      fill: $color-fill;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

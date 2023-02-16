@@ -1,0 +1,132 @@
+.image-portfolio {
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__portfolio-images {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid $color;
+    border-bottom: 3px solid $color;
+    cursor: pointer;
+
+    &:hover {
+      background: $background-main;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__portfolio-images1 {
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+    border: 1px solid $color;
+    border-bottom: 3px solid $color;
+    cursor: pointer;
+
+    &:hover {
+      background: $background-main;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__portfolio-images2 {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    border: 1px solid $color;
+    border-bottom: 3px solid $color;
+    cursor: pointer;
+
+    &:hover {
+      background: $background-main;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__portfolio-images3 {
+    width: 370px;
+    height: 404px;
+    border: 1px solid $color;
+    border-bottom: 3px solid $color;
+    cursor: pointer;
+
+    &:hover {
+      background: $background-main;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__link {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    &:hover > .image-portfolio__tex {
+      top: 0px;
+    }
+  }
+
+  &__image {
+    width: 370px;
+    height: 294px;
+    padding-right: 1px;
+  }
+
+  &__tex {
+    width: 370px;
+    height: 294px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55em;
+    letter-spacing: 0.03em;
+    color: $text-button;
+    position: absolute;
+    text-align: justify;
+    padding: 64px 24px;
+    margin: 0 auto;
+    background-color: rgba(33, 150, 243, 0.9);
+    top: 294px;
+    opacity: cubic-bezier(0.4, 0, 0.2, 1),
+      visibility cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &__title {
+    margin-left: 24px;
+    margin-right: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    color: $color-title;
+    letter-spacing: 0.06em;
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+
+  &__text {
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: var(--var-color-text);
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+}

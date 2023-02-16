@@ -1,0 +1,140 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-modal {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166em;
+    letter-spacing: 0.01em;
+    color: $color-text;
+  }
+
+  &__datos {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 42px;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166em;
+    letter-spacing: 0.01em;
+    color: $color-input-window;
+
+    &:hover + .form-icons,
+    &:focus + .form-icons {
+      fill: $primary-color;
+    }
+
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+
+  .form-icons {
+    position: relative;
+    .icons-form {
+      position: absolute;
+      left: 15px;
+      transform: translateY(-210%);
+    }
+  }
+}
+
+.modal-comment {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &__comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166em;
+    letter-spacing: 0.01em;
+    color: $color-text-window;
+
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+}
+
+.modal-check {
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-left: 20px;
+
+  &__description {
+    display: flex;
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714em;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: $color-text;
+  }
+  &__checkbox {
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+    margin-top: 5px;
+  }
+}
+
+.submit {
+  background-color: $background-button;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  /* identical to box height, or 188% */
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $text-button;
+  &:hover {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

@@ -1,0 +1,75 @@
+.form-footer {
+  display: flex;
+
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 12px;
+
+    &__text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.142em;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $color-text-footer;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      margin-top: 20px;
+      padding: 16px 15px;
+
+      border: $border-input-footer;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: $background-input-footer;
+      opacity: 1;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      /* identical to box height, or 125% */
+      letter-spacing: 0.03em;
+      color: $text-footer;
+    }
+  }
+
+  .for-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-top: 36px;
+    padding-left: 39px;
+    padding-right: 28px;
+    background: $background-button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875em;
+    /* identical to box height, or 188% */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $text-button;
+    fill: $fill-button;
+
+    &__enviar {
+      margin-left: 20px;
+    }
+  }
+}

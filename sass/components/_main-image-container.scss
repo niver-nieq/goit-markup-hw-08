@@ -1,0 +1,117 @@
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin: auto;
+    padding-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--var-color-title);
+
+    &:hover {
+      text-decoration: underline $primary-color 1px;
+    }
+  }
+}
+
+.image-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+
+  &__details {
+    width: 373.16px;
+    height: 323.7px;
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      border: 1px solid var(--var-color-fondo-hover-focus);
+      border-radius: 2px;
+    }
+  }
+
+  &__details p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7142em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-main;
+
+    position: absolute;
+    top: 0%;
+    width: 373.16px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: $background-main-p;
+    margin: auto;
+    margin-top: 66%;
+
+    &:hover {
+      border: 1px solid $primary-color;
+      border-radius: 4px;
+    }
+  }
+
+  &__details1 {
+    width: 373.16px;
+    height: 323.7px;
+    margin-left: 30.26px;
+    margin-right: 23.42px;
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      border: 1px solid var(--var-color-fondo-hover-focus);
+      border-radius: 2px;
+    }
+  }
+
+  &__details1 p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.7142em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-main;
+
+    position: absolute;
+    top: 0%;
+    width: 373.16px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: $background-main-p;
+    margin: auto;
+    margin-top: 66%;
+
+    &:hover {
+      border: 1px solid $primary-color;
+      border-radius: 4px;
+    }
+  }
+
+  &__image {
+    width: 373.16px;
+    height: 323.7px;
+  }
+}
