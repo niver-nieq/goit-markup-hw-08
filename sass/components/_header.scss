@@ -11,6 +11,10 @@ header {
     display: flex;
     padding-left: 15px;
 
+    &__logo {
+      color: $fill-button-window;
+    }
+
     &__link-web {
       text-decoration: none;
       margin: auto;

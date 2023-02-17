@@ -12,6 +12,10 @@ footer {
   .cont-footer {
     margin-right: 70px;
 
+    &__logo {
+      color: $color-text-footer;
+    }
+
     &__logo-footer {
       text-decoration: none;
       font-family: 'Raleway';

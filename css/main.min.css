@@ -69,6 +69,9 @@ header .nav {
   display: flex;
   padding-left: 15px;
 }
+header .nav__logo {
+  color: #000000;
+}
 header .nav__link-web {
   text-decoration: none;
   margin: auto;
@@ -183,6 +186,9 @@ footer .container-footer {
 }
 footer .cont-footer {
   margin-right: 70px;
+}
+footer .cont-footer__logo {
+  color: #ffffff;
 }
 footer .cont-footer__logo-footer {
   text-decoration: none;
