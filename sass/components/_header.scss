@@ -5,6 +5,8 @@ header {
   .cabezera {
     height: 80px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .nav {
@@ -136,4 +138,96 @@ header {
       }
     }
   }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  @media (min-width: 768px) {
+    .menu-toggle {
+      position: absolute;
+      display: none;
+    }
+  }
+
+  .menu {
+    margin: auto;
+    padding: 0;
+  }
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+      // width: 100%;
+    }
+    .contact {
+      display: none;
+      // width: 100%;
+    }
+    .cabezera {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  position: absolute;
+  top: 16px;
+  right: 100vh;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
