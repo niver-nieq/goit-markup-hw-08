@@ -234,7 +234,7 @@ header .menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100vw;
   height: 796px;
   padding-left: 40px;
   padding-top: 48px;
@@ -264,6 +264,29 @@ header .menu {
   background-color: rgba(0, 0, 0, 0.1);
   fill: #2196f3;
 }
+.menu-container .mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu-container .mobile-menu .link-menu {
+  margin-bottom: 32px;
+}
+.menu-container .mobile-menu .link {
+  text-decoration: none;
+  font-style: normal;
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+.menu-container .mobile-menu .link:hover {
+  color: #2196f3;
+}
+.menu-container .mobile-menu .contact {
+  margin-bottom: 32px;
+}
 .menu-container .mobil-contact {
   display: flex;
   flex-direction: column;
@@ -271,6 +294,9 @@ header .menu {
   list-style: none;
   width: 100%;
   padding: 0px;
+}
+.menu-container .mobil-contact .contact {
+  margin-bottom: 32px;
 }
 .menu-container .mobil-contact a.contact__number {
   text-decoration: none;
@@ -295,33 +321,11 @@ header .menu {
 .menu-container .mobil-contact a.contact__email:hover, .menu-container .mobil-contact a.contact__email:focus {
   color: #2196f3;
 }
-.menu-container .mobil-contact li {
-  margin-bottom: 32px;
-}
-.menu-container .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.menu-container .mobile-menu .link {
-  text-decoration: none;
-  font-style: normal;
-  color: #212121;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-}
-.menu-container .mobile-menu .link:hover {
-  color: #2196f3;
-}
-.menu-container .mobile-menu li {
-  margin-bottom: 32px;
-}
 .menu-container .mobil-redes {
   display: flex;
   list-style: none;
   padding: 0px;
+  margin-top: 32px;
 }
 .menu-container .mobil-redes a {
   text-decoration: none;

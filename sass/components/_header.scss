@@ -204,7 +204,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100vw;
   height: 796px;
   padding-left: 40px;
   padding-top: 48px;
@@ -240,6 +240,33 @@ header {
     }
   }
 
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    .link-menu {
+      margin-bottom: 32px;
+    }
+
+    .link {
+      text-decoration: none;
+      font-style: normal;
+      color: $color-title;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .contact {
+      margin-bottom: 32px;
+    }
+  }
   .mobil-contact {
     display: flex;
     flex-direction: column;
@@ -247,6 +274,10 @@ header {
     list-style: none;
     width: 100%;
     padding: 0px;
+
+    .contact {
+      margin-bottom: 32px;
+    }
 
     a.contact__number {
       text-decoration: none;
@@ -277,40 +308,13 @@ header {
         color: $primary-color;
       }
     }
-
-    li {
-      margin-bottom: 32px;
-    }
-  }
-
-  .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    .link {
-      text-decoration: none;
-      font-style: normal;
-      color: $color-title;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 47px;
-      letter-spacing: 0.02em;
-
-      &:hover {
-        color: $primary-color;
-      }
-    }
-
-    li {
-      margin-bottom: 32px;
-    }
   }
 
   .mobil-redes {
     display: flex;
     list-style: none;
     padding: 0px;
+    margin-top: 32px;
     a {
       text-decoration: none;
       font-style: normal;
