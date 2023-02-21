@@ -111,3 +111,59 @@
     height: 20px;
   }
 }
+
+@media (max-width: 481px) {
+  .equipment-container {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    &__title {
+      margin: auto;
+      padding-bottom: 50px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.166em;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $color-title;
+    }
+
+    .team-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &__image-container {
+        width: 100%;
+        background: $background-main;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        padding-bottom: 24px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+      }
+
+      &__image-container1 {
+        background: $background-main;
+        margin: 0px;
+        padding-bottom: 24px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+      }
+    }
+    .team-list__image {
+      width: 100%;
+    }
+
+    .network-container {
+      width: 100%;
+    }
+  }
+}

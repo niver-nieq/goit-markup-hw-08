@@ -5,12 +5,10 @@
   margin: auto;
   width: 100%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 481px) {
     .main-details {
-      // justify-content: left;
       flex-direction: column;
       padding: 15px;
-      // margin: 0px;
 
       &__details {
         margin: 0px;

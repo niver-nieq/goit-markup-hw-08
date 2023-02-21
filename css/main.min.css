@@ -229,16 +229,6 @@ header .menu {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
-  header .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    width: 100%;
-    padding: 0px;
-  }
-}
 
 .menu-container {
   position: fixed;
@@ -246,7 +236,7 @@ header .menu {
   left: 0;
   width: 100vw;
   height: 100%;
-  padding-left: 40px;
+  padding-left: 35px;
   padding-top: 48px;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -278,6 +268,7 @@ header .menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 0px;
 }
 .menu-container .mobile-menu .link-menu {
   margin-bottom: 32px;
@@ -304,6 +295,7 @@ header .menu {
   list-style: none;
   width: 100%;
   padding: 0px;
+  margin-bottom: 0px;
 }
 .menu-container .mobil-contact .contact {
   margin-bottom: 32px;
@@ -335,7 +327,8 @@ header .menu {
   display: flex;
   list-style: none;
   padding: 0px;
-  margin-top: 32px;
+  margin-top: 64px;
+  margin-bottom: 0px;
 }
 .menu-container .mobil-redes a {
   text-decoration: none;
@@ -567,7 +560,6 @@ main li {
 }
 
 .main-container {
-  min-width: 320px;
   width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images2/Imagen.jpg);
   background-size: cover;
@@ -579,7 +571,6 @@ main li {
   width: 696px;
   display: block;
   margin: 0 auto;
-  padding: 0px;
   padding-bottom: 41px;
   font-style: normal;
   font-weight: 900;
@@ -618,6 +609,28 @@ main li {
 }
 .main-container__boton:hover, .main-container__boton:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 481px) {
+  .main-container .main-container {
+    padding: 0px;
+  }
+  .main-container .main-container__title {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .main-container .main-container__boton {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .backdrop {
@@ -821,7 +834,7 @@ main li {
   margin: auto;
   width: 100%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .main-details .main-details {
     flex-direction: column;
     padding: 15px;
@@ -1017,6 +1030,11 @@ main li {
   height: 323.7px;
 }
 
+@media (max-width: 481px) {
+  .image-container {
+    display: none;
+  }
+}
 .team-color {
   background: #f5f4fa;
   margin-bottom: 94px;
@@ -1120,6 +1138,54 @@ main li {
   height: 20px;
 }
 
+@media (max-width: 481px) {
+  .equipment-container {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .equipment-container__title {
+    margin: auto;
+    padding-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .equipment-container .team-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .equipment-container .team-list__image-container {
+    width: 100%;
+    background: #ffffff;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .equipment-container .team-list__image-container1 {
+    background: #ffffff;
+    margin: 0px;
+    padding-bottom: 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .equipment-container .team-list__image {
+    width: 100%;
+  }
+  .equipment-container .network-container {
+    width: 100%;
+  }
+}
 .button-container {
   display: flex;
   align-items: center;

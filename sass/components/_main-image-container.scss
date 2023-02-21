@@ -115,3 +115,9 @@
     height: 323.7px;
   }
 }
+
+@media (max-width: 481px) {
+  .image-container {
+    display: none;
+  }
+}
