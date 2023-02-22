@@ -1,12 +1,8 @@
 .footer-redes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 44px;
-  margin-top: 16px;
   padding: 0px;
   margin: 0 auto;
-  margin-top: 16px;
 
   &__title {
     font-style: normal;
@@ -62,5 +58,23 @@
   &__redes {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (max-width: 481px) {
+  .redes-footer {
+    margin-top: 20px;
+    &__icons {
+      fill: $fill-button;
+    }
+    &__icons1 {
+      fill: $fill-button;
+      background: $background-icons;
+      &:hover,
+      &:focus {
+        background: $primary-color;
+        fill: $color-fill;
+      }
+    }
   }
 }
