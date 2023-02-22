@@ -54,6 +54,20 @@
     fill: $color-fill;
     margin-bottom: 0px;
   }
+  &__icons2 {
+    border-radius: 50%;
+    height: 44px;
+    padding: 12px;
+    background: $background-icons;
+    fill: $primary-fill-color;
+    margin-bottom: 0px;
+
+    &:hover,
+    &:focus {
+      background: $primary-color;
+      fill: $color-fill;
+    }
+  }
 
   &__redes {
     width: 20px;
@@ -62,12 +76,24 @@
 }
 
 @media (max-width: 481px) {
+  .footer-redes {
+    width: 100%;
+  }
   .redes-footer {
     margin-top: 20px;
     &__icons {
       fill: $fill-button;
     }
     &__icons1 {
+      fill: $fill-button;
+      background: $background-icons;
+      &:hover,
+      &:focus {
+        background: $primary-color;
+        fill: $color-fill;
+      }
+    }
+    &__icons2 {
       fill: $fill-button;
       background: $background-icons;
       &:hover,

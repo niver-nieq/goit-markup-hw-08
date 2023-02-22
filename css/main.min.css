@@ -59,10 +59,14 @@ body {
 }
 
 @media (max-width: 481px) {
+  .container {
+    width: 100%;
+  }
   .client-title {
-    margin: 0px;
-    width: 480px;
-    padding-bottom: 20px;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    text-align: center;
   }
   .client-container {
     display: flex;
@@ -70,7 +74,7 @@ body {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-    width: 480px;
+    width: 100%;
   }
   .client-container__icon {
     width: 210px;
@@ -86,6 +90,14 @@ body {
   .client-container__clientes-6 {
     margin: 0px;
     margin-top: 30px;
+  }
+}
+@media (max-width: 481px) and (max-width: 460px) {
+  .client-container__icon {
+    width: 180px;
+    height: 92px;
+    margin: 0px;
+    padding: 0px;
   }
 }
 header {
@@ -473,7 +485,6 @@ footer .cont-footer .link-footer a:hover, footer .cont-footer .link-footer a:foc
     width: 100%;
   }
   .link-footer {
-    align-content: center;
     margin: 0px;
     margin-top: 28px;
   }
@@ -628,12 +639,27 @@ footer .cont-footer .link-footer a:hover, footer .cont-footer .link-footer a:foc
   fill: #f5f4fa;
   margin-bottom: 0px;
 }
+.redes-footer__icons2 {
+  border-radius: 50%;
+  height: 44px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #afb1b8;
+  margin-bottom: 0px;
+}
+.redes-footer__icons2:hover, .redes-footer__icons2:focus {
+  background: #2196f3;
+  fill: #f5f4fa;
+}
 .redes-footer__redes {
   width: 20px;
   height: 20px;
 }
 
 @media (max-width: 481px) {
+  .footer-redes {
+    width: 100%;
+  }
   .redes-footer {
     margin-top: 20px;
   }
@@ -645,6 +671,14 @@ footer .cont-footer .link-footer a:hover, footer .cont-footer .link-footer a:foc
     background: rgba(255, 255, 255, 0.1);
   }
   .redes-footer__icons1:hover, .redes-footer__icons1:focus {
+    background: #2196f3;
+    fill: #f5f4fa;
+  }
+  .redes-footer__icons2 {
+    fill: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .redes-footer__icons2:hover, .redes-footer__icons2:focus {
     background: #2196f3;
     fill: #f5f4fa;
   }
@@ -1228,6 +1262,17 @@ main li {
   margin-bottom: 0px;
 }
 .network-container__networks:hover, .network-container__networks:focus {
+  background: #2196f3;
+  fill: #f5f4fa;
+}
+.network-container__networks1 {
+  border-radius: 50%;
+  height: 44px;
+  padding: 12px;
+  fill: #afb1b8;
+  margin-bottom: 0px;
+}
+.network-container__networks1:hover, .network-container__networks1:focus {
   background: #2196f3;
   fill: #f5f4fa;
 }
