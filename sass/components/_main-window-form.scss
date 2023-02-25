@@ -88,13 +88,12 @@
 
 .modal-check {
   width: 448px;
-  display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding-left: 20px;
 
   &__description {
-    display: flex;
+    display: contents;
     margin: auto;
     font-style: normal;
     font-weight: 400;
@@ -103,6 +102,10 @@
     /* identical to box height, or 171% */
     letter-spacing: 0.03em;
     color: $color-text;
+  }
+  &__terms {
+    color: $primary-color;
+    text-decoration: underline;
   }
   &__checkbox {
     width: 16px;
@@ -136,5 +139,32 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 481px) {
+  .form-modal {
+    width: 100%;
+    &__datos {
+      width: 100%;
+    }
+  }
+
+  .modal-comment {
+    width: 100%;
+
+    &__comment {
+      width: 100%;
+    }
+  }
+
+  .modal-check {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 31px;
+    &__description {
+      font-size: 12px;
+      line-height: 1.166em;
+    }
   }
 }

@@ -15,7 +15,6 @@ body {
   margin: auto;
   padding-bottom: 94px;
   padding-top: 94px;
-  width: 100%;
 }
 
 .client-title {
@@ -276,7 +275,7 @@ header .menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   padding-left: 35px;
   padding-top: 48px;
@@ -832,6 +831,25 @@ main li {
   color: #212121;
 }
 
+@media (max-width: 481px) {
+  .backdrop {
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+  }
+  .modal {
+    width: 100%;
+    height: 609px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .modal__button-close {
+    width: 30px;
+    height: 30px;
+    left: 100%;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -912,13 +930,12 @@ main li {
 
 .modal-check {
   width: 448px;
-  display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding-left: 20px;
 }
 .modal-check__description {
-  display: flex;
+  display: contents;
   margin: auto;
   font-style: normal;
   font-weight: 400;
@@ -927,6 +944,10 @@ main li {
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+}
+.modal-check__terms {
+  color: #2196f3;
+  text-decoration: underline;
 }
 .modal-check__checkbox {
   width: 16px;
@@ -959,6 +980,29 @@ main li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 481px) {
+  .form-modal {
+    width: 100%;
+  }
+  .form-modal__datos {
+    width: 100%;
+  }
+  .modal-comment {
+    width: 100%;
+  }
+  .modal-comment__comment {
+    width: 100%;
+  }
+  .modal-check {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 31px;
+  }
+  .modal-check__description {
+    font-size: 12px;
+    line-height: 1.166em;
+  }
+}
 .main-details {
   display: flex;
   justify-content: center;
