@@ -121,3 +121,9 @@
     display: none;
   }
 }
+
+@media (min-width: 481px) and (max-width: 769px) {
+  .image-container {
+    display: none;
+  }
+}

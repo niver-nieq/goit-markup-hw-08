@@ -96,3 +96,28 @@ footer {
     }
   }
 }
+
+@media (min-width: 481px) and (max-width: 769px) {
+  .container-footer {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cont-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 71px;
+  }
+
+  .link-footer {
+    margin: 0px;
+    margin-top: 28px;
+
+    li {
+      margin-top: 12px;
+    }
+  }
+}
